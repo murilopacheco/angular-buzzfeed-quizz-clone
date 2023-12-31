@@ -4,9 +4,16 @@
   margin:0;
   border:0;
   box-sizing: border-box;
-  color:antiquewhite;
+  color: #6d6d76;
 }
 
-body{
-  background-color: #1F1147;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ffffff, #f0f0f0); /* Degradê de branco para cinza claro */
+  background-size: cover; /* Cobrir todo o corpo */
+  background-attachment: fixed; /* Mantém o plano de fundo fixo ao rolar */
+  background-image: url('https://img.freepik.com/fotos-gratis/fundo-3d-com-cubos-brancos_23-2150472998.jpg?size=626&ext=jpg&ga=GA1.1.565189076.1703985727&semt=ais'); /* Substitua 'sua-imagem-de-repeat-suave.jpg' pelo caminho da sua imagem */
 }
+

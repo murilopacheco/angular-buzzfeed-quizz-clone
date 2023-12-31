@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import quizz_questions from "../../../assets/data/quizz_questions.json"
 
 @Component({
@@ -22,7 +23,7 @@ export class QuizzComponent implements OnInit {
 
   finished:boolean = false
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     if(quizz_questions){
@@ -73,6 +74,10 @@ export class QuizzComponent implements OnInit {
     })
 
     return result
+  }
+
+  goToInicio() {
+    location.reload();
   }
 
 }
